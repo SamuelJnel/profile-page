@@ -1,0 +1,97 @@
+* {
+  /* box-sizing: border-box; */
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #455a64;
+  /* font-family: "Montserrat", sans-serif; */
+}
+
+#about-me,
+#projects {
+  min-height: 450px;
+}
+
+.section-title {
+  font-size: 40px;
+  padding: 15px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.page-container {
+  margin: auto;
+  width: 95%;
+}
+
+/* Nav Section */
+nav {
+  background-color: #455a64;
+}
+
+/* About Me Section */
+
+#about-me {
+  display: flex;
+
+  align-items: center;
+  margin-top: 3px;
+  width: 100%;
+}
+
+.profile-img-container {
+  padding: 12px;
+}
+
+.profile-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+/* Project section */
+#projects {
+  width: 90%;
+  margin: auto;
+}
+
+.section-title-projects {
+  margin-left: 25px;
+  font-size: 40px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.row {
+  width: 100%;
+  margin: 0px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 30%;
+  margin-right: 25px;
+  border-radius: 5px;
+}
+.project-img {
+  width: 250px;
+  height: 250px;
+}
+
+.card-content {
+  text-align: left;
+}
+
+/* Contact Section */
+#contact {
+  background-color: #738e9b;
+  min-height: 200px;
+}
