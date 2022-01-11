@@ -1,13 +1,11 @@
-* {
-  /* box-sizing: border-box; */
-}
-
 html,
 body {
   padding: 0;
   margin: 0;
   background-color: #262621;
   color: white;
+  font-family: "Montserrat", sans-serif;
+
   /* font-family: "Montserrat", sans-serif; */
 }
 
@@ -39,11 +37,23 @@ nav {
   background-color: #8c5b30;
 }
 
-ul li {
+.nav-wrapper ul li {
   margin-right: 35px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
 }
-ul li:hover {
+.nav-wrapper ul li:hover {
   background-color: #8c2218;
+}
+
+.sidenav {
+  color: white;
+  background-color: #8c5b30;
+  width: 65%;
+}
+
+.sidenav li a {
+  color: white;
 }
 
 /* About Me Section */
@@ -51,17 +61,28 @@ ul li:hover {
 #about-me {
   display: flex;
   background-color: #262621;
+  justify-content: center;
   align-items: center;
   width: 87%;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 40px;
+  font-size: 17px;
 }
 
+.about-hi {
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "Quicksand", sans-serif;
+  text-decoration-line: underline;
+  text-decoration-color: #8c2218;
+}
 .profile-img-container {
   padding: 12px;
+  align-self: center;
 }
 .img-text-container {
   display: flex;
+  width: 80%;
   justify-content: space-evenly;
 }
 
@@ -76,11 +97,19 @@ ul li:hover {
   align-self: center;
 }
 
+.skills-list:not(.browser-default) > li {
+  list-style-type: disc;
+}
+.skills-list {
+  margin-left: 30px;
+}
+
 /* Project section */
 #projects {
   width: 90%;
   margin: auto;
   margin-bottom: 15px;
+  font-weight: bold;
 }
 
 .section-title-projects {
@@ -124,10 +153,11 @@ ul li:hover {
   align-items: center;
   background-color: #8c5b30;
   min-height: 200px;
+  font-weight: bold;
 }
 
 .contact-container {
-  width: 50%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   margin-left: 125px;
@@ -139,4 +169,25 @@ i {
 
 .btn-contact {
   margin-left: 10px;
+}
+
+@media only screen and (max-width: 780px) {
+  .img-text-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-btn-container {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .contact-btn-container {
+    flex-direction: column;
+  }
+  .btn-contact {
+    margin: 5px 0 10px 0;
+    max-width: 150px;
+  }
 }

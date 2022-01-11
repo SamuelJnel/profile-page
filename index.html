@@ -14,19 +14,38 @@
       integrity="sha384-7ynz3n3tAGNUYFZD3cWe5PDcE36xj85vyFkawcF6tIwxvIecqKvfwLiaFdizhPpN"
       crossorigin="anonymous"
     />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Quicksand:wght@300;400;500;600;700&family=Work+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/styles.css" />
     <title>Jonelle Samuel</title>
   </head>
   <body>
     <nav>
       <div class="nav-wrapper">
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+          ><i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
           <li><a href="#about-me">About Me</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="#about-me">About Me</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
 
     <div class="page-container">
       <section id="about-me">
@@ -39,12 +58,22 @@
             />
           </div>
           <div class="about-me-text">
-            Hi, I'm Jonelle. Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit. Pellentesque sit amet purus sodales, accumsan lacus et,
-            interdum lacus. Maecenas gravida rhoncus quam, in interdum nibh
-            vehicula accumsan. Donec eleifend dolor in orci dignissim, blandit
-            accumsan eros bibendum. Fusce scelerisque ligula vitae aliquam
-            imperdiet. Suspendisse in odio vel enim efficitur luctus.
+            <span class="about-hi">Hi, I'm Jonelle.</span> <br />
+            While working in the hospitality industry I developed a love for
+            programing. I am a graduate of the Software Engineering program at
+            General Assembly where I gained many skills and built exciting
+            projects. Check out some of my projects below.
+
+            <p>Skills:</p>
+            <ul class="skills-list">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Javascript ES6</li>
+              <li>SQL & MongoDB/MongooseJS</li>
+              <li>ReactJS, NodeJS & ExpressJS Framework</li>
+              <li>MERN Full Stack Applications</li>
+              <li>Hosting Web Applications via Heroku</li>
+            </ul>
           </div>
         </div>
       </section>
@@ -171,6 +200,12 @@
         </div>
       </section>
     </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var elems = document.querySelectorAll(".sidenav");
+        var instances = M.Sidenav.init(elems);
+      });
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   </body>
 </html>
