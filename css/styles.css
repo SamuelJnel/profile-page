@@ -190,4 +190,8 @@ i {
     margin: 5px 0 10px 0;
     max-width: 180px;
   }
+
+  i {
+    margin-left: 10px;
+  }
 }
